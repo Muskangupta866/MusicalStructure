@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20dp">
+
+        <ImageView
+            android:id="@+id/album_img"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_of_the_album"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/album_img"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/_16dp"
+            android:paddingStart="@dimen/_16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20sp"
+            tools:text="Aas Paas Khuda" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/album_img"
+            android:layout_toEndOf="@id/album_img"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_16dp">
+
+            <TextView
+                android:id="@+id/singer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/_10dp"
+                android:textColor="#dfdcdc"
+                android:textSize="@dimen/_16sp"
+                tools:text="pagalworld.com " />
+
+            <TextView
+                android:id="@+id/song_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_16dp"
+                android:textColor="#dfdcdc"
+                android:textSize="@dimen/_16sp"
+                tools:text="5:00" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

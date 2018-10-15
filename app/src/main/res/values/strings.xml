@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="image_of_the_album">Image of the album</string>
+    <string name="_library">Library</string>
+    <string name="album_art_of_song">album art of song</string>
+</resources>
